@@ -13,14 +13,3 @@ A C++ CLI for GitHub. It uses [libcurl](https://curl.se/libcurl/) to perform HTT
 ```
 g++ -std=gnu++17 -Ofast main.cpp -lcurl -o github
 ```
-
-
-
-
-
-
-git remote add origin https://github.com/simonespa/GitHubCLI.git
-
-git pull origin main
-
-git push -u origin main
