@@ -13,3 +13,23 @@ A C++ CLI for GitHub. It uses [libcurl](https://curl.se/libcurl/) to perform HTT
 ```
 g++ -std=gnu++17 -Ofast main.cpp -lcurl -o github
 ```
+
+## Usage
+
+By default it returns the `octocat` user information. You can use `jq` to parse the JSON output.
+
+```
+./github | jq
+```
+
+Otherwise, it is possible to specify a user.
+
+```
+./github -u simonespa | jq
+```
+
+To get help about the command, run the following.
+
+```
+./github -h
+```
